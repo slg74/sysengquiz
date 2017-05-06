@@ -2,7 +2,7 @@
 quiz.py 
 -------
 
-A quiz program that displays SE/SRE questions for intervieww.    
+A quiz program that displays SE/SRE questions for interviews.    
 
 Usage example  
 -------------  
