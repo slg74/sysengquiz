@@ -4,7 +4,16 @@ import random
 
 def get_question():
     lines = open('questions.md').read().splitlines()
-    return random.choice(lines)
+    if lines:
+        return random.choice(lines)
+    else:
+        have_question = False
+        while not have_question:
+            question = random.choice(lines)
+            if question:
+                have_question = True
+
+                return question
    
 def main():
     question = get_question()
