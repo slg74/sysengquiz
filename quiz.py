@@ -18,7 +18,9 @@ def get_question():
             question = random.choice(lines)
             recent.append(question)
 
-            if question not in recent:
+            # if the question has not been asked recently and the question exists
+            if question not in recent and question:
+            
                 have_question = True
                 return question
    
